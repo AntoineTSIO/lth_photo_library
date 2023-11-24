@@ -20,10 +20,6 @@ type FieldType = {
 const App: React.FC = () => {
     const [darkMode, setDarkMode] = useState(false);
 
-    const toggleDarkMode = () => {
-        setDarkMode((prevMode) => !prevMode);
-    };
-
     const LoginForm: React.FC<LoginFormProps> = ({onLogin}) => {
         const [username, setUsername] = useState('');
         const [password, setPassword] = useState('');
@@ -88,11 +84,6 @@ const App: React.FC = () => {
                            rel="noopener noreferrer"
                            className="link">AntoineTSIO</a>
                     </p>
-                    <div className="light-mode-toggle">
-                        <Button type="primary" onClick={toggleDarkMode}>
-                            {darkMode ? 'Disable Dark Mode' : 'Enable Dark Mode'}
-                        </Button>
-                    </div>
                 </div>
             </div>
         );
