@@ -34,24 +34,8 @@
 
 .content {
     margin-bottom: 40px;
-}
-
-.form {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #666;
-}
-
-.form-input {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #666;
-    display: block;
-    width: 100%;
-    background: #e6e6e6;
-    height: 50px;
-    border-radius: 25px;
-    align-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .footer {
